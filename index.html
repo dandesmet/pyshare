@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WebSockets Client</title> 
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+  <script src="dropzone.js"></script>
+  <script src="chat.js"></script>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="share.css">
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 sidebar">
+            <ul class="nav nav-sidebar upload">
+                <li>
+                    <a href="#" id="upload-btn" class="btn btn-primary">Upload...</a>
+                </li>
+            </ul>
+            <ul class="nav nav-sidebar dl-list">
+            </ul>
+        </div>
+        <div class="col-md-offset-3 main">
+            <div class="row">
+                <div class="col-md-9">
+                    <textarea id="data"></textarea>
+                </div>
+                <div class="col-md-3">
+                    <div class="btn-group btn-group-lg btn-group-justified btn-group-fill-height">
+                        <a id="sendtext" href="#" class="btn btn-primary btn-send" role="button">Send</a>
+                    </div>
+                </div>
+            </div>
+            <div id="messages">
+                <!-- text messages from the server appear here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
